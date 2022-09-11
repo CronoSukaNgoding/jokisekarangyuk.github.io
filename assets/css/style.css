@@ -1,264 +1,292 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
-body{
-    background:#7045FF;
+body {
+    background: #7045FF;
     overflow-x: hidden;
-    margin:0;
-    padding:0;
-}
- /*scrollbar*/
-::-webkit-scrollbar{
-    width:15px;
-}
-::-webkit-scrollbar-track{
-    background:#c4c4c4;
+    margin: 0;
+    padding: 0;
 }
 
-::-webkit-scrollbar-thumb{
-    background:#83FFE1;
-    border-radius:10px;
+
+/*scrollbar*/
+
+::-webkit-scrollbar {
+    width: 15px;
 }
+
+::-webkit-scrollbar-track {
+    background: #c4c4c4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #83FFE1;
+    border-radius: 10px;
+}
+
 
 /* navbar */
+
 #nav {
     background: #7045FF !important;
     position: sticky !important;
     top: 0 !important;
     z-index: 1!important;
-    margin:auto;
-    
-    
+    margin: auto;
 }
+
 .navbar-brand span {
     font-weight: bolder;
     color: #83FFE1;
 }
 
-.navbar-nav a{
-    position:relative;
-    color: #83FFE1!important ;
+.navbar-nav a {
+    position: relative;
+    color: #83FFE1!important;
     font-weight: bolder;
-    
-    
 }
-.navbar-nav  li{
+
+.navbar-nav li {
     padding: 0 45px;
 }
-.navbar-nav a:after{
-    content:"";
+
+.navbar-nav a:after {
+    content: "";
     position: absolute;
     background-color: #FFADED;
     height: 3px;
     width: 0;
-    left:0;
-    bottom:-1px;
-    transition:0.3s;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
     border-radius: 10px;
 }
-.navbar-nav a:hover{
-    color:#FFADED!important;
+
+.navbar-nav a:hover {
+    color: #FFADED!important;
 }
-.navbar-nav a:hover:after{
+
+.navbar-nav a:hover:after {
     width: 100%;
 }
-.btn{
+
+.btn {
     background-color: #FFADED;
     border-radius: 10px;
     color: #7045FF;
-    
 }
 
 
 /* banner */
-#banner{
-    position:relative;
+
+#banner {
+    position: relative;
     padding-top: 10%;
 }
 
-
-.title{
+.title {
     position: relative;
     font-weight: bolder;
-    
 }
 
-.ban-img{
+.ban-img {
     position: relative;
-    max-width:100%;
+    max-width: 100%;
 }
 
-.col-md-6{
+.col-md-6 {
     color: #83FFE1;
 }
 
+
 /*Browse*/
-#browse .container{
+
+#browse .container {
     padding-top: 5%;
 }
-.container .browse{
+
+.container .browse {
     padding-bottom: 2%;
 }
+
 .dash {
     border: 2px solid #83FFE1;
     border-radius: 20px;
     width: 70px;
     height: -10px;
     bottom: 24px;
-    left:270px;
-    
-    position:relative;
+    left: 270px;
+    position: relative;
     background-color: #83FFE1;
 }
+
 .container .card1,
 .container .card2,
 .container .card3,
-.container .card4{
+.container .card4 {
     position: relative;
     width: 220px;
     height: 350px;
     background: hsl(249, 26%, 24%);
     border-radius: 20px;
     overflow: hidden;
-    margin:30px;
+    margin: 30px;
 }
-.container span{
-    color:#83FFE1;
+
+.container span {
+    color: #83FFE1;
 }
 
 .container .card1:before,
 .container .card2:before,
 .container .card3:before,
-.container .card4:before{
-    content:'';
+.container .card4:before {
+    content: '';
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    clip-path: circle(90px at 90% 20%) ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(90px at 90% 20%);
     transition: 0.5s ease-in-out;
-} 
-.container .card1:before{
-    background:#dc6736;
 }
-.container .card2:before{
-    background:#2C70C1;
+
+.container .card1:before {
+    background: #dc6736;
 }
-.container .card3:before{
-    background:#625954;
+
+.container .card2:before {
+    background: #2C70C1;
 }
-.container .card4:before{
-    background:#25F4EE;
+
+.container .card3:before {
+    background: #625954;
+}
+
+.container .card4:before {
+    background: #25F4EE;
 }
 
 .container .card1:hover:before,
 .container .card2:hover:before,
 .container .card3:hover:before,
-.container .card4:hover:before{
+.container .card4:hover:before {
     clip-path: circle(200px at 80% -20%)
 }
 
 .container .card1 .imgBx,
 .container .card2 .imgBx,
 .container .card3 .imgBx,
-.container .card4 .imgBx{
+.container .card4 .imgBx {
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
-    
-    width:100%;
-    height:180px;
+    width: 100%;
+    height: 180px;
     transition: 0.5s;
 }
+
 .container .card1:hover .imgBx,
 .container .card2:hover .imgBx,
 .container .card3:hover .imgBx,
-.container .card4:hover .imgBx{
-    top:0%;
+.container .card4:hover .imgBx {
+    top: 0%;
     transform: translateY(0%)
 }
+
 .container .card1 .imgBx img,
 .container .card2 .imgBx img,
 .container .card3 .imgBx img,
-.container .card4 .imgBx img{
+.container .card4 .imgBx img {
     position: absolute;
-    top:40%;
+    top: 40%;
     left: 35%;
-    width:70px;
+    width: 70px;
 }
+
 .container .card1 .contentBx,
 .container .card2 .contentBx,
 .container .card3 .contentBx,
-.container .card4 .contentBx{
+.container .card4 .contentBx {
     position: absolute;
     bottom: 40px;
-    width:100%;
-    height:50px;
+    width: 100%;
+    height: 50px;
     text-align: center;
     transition: 1s;
 }
+
 .container .card1:hover .contentBx,
 .container .card2:hover .contentBx,
 .container .card3:hover .contentBx,
-.container .card4:hover .contentBx{
-    height:140px;
+.container .card4:hover .contentBx {
+    height: 140px;
 }
+
 .container .card1 .contentBx h2,
 .container .card2 .contentBx h2,
 .container .card3 .contentBx h2,
-.container .card4 .contentBx h2{
+.container .card4 .contentBx h2 {
     position: absolute;
     font-weight: bolder;
-    color:rgb(255, 255, 255);
-    display:flex;
+    color: rgb(255, 255, 255);
+    display: flex;
     text-align: center;
-    padding:8px 67px;
+    padding: 8px 67px;
     transition: 0.3s;
 }
-.container .card2 .contentBx h2{
-    padding:8px 40px;
+
+.container .card2 .contentBx h2 {
+    padding: 8px 40px;
 }
-.container .card3 .contentBx h2{
-    padding:8px 62px;
+
+.container .card3 .contentBx h2 {
+    padding: 8px 62px;
 }
-.container .card4 .contentBx h2{
-    padding:8px 65px;
+
+.container .card4 .contentBx h2 {
+    padding: 8px 65px;
 }
+
 .container .card1 .content-btn,
 .container .card2 .content-btn,
 .container .card3 .content-btn,
-.container .card4 .content-btn{
-   display:inline-block;
-   padding: 60px 50px;
-   text-decoration: none;
-   opacity:0;
-   transform: translateY(50px);
-   transition:0.5s;
+.container .card4 .content-btn {
+    display: inline-block;
+    padding: 60px 50px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
 }
+
 .container .card1:hover .content-btn,
 .container .card2:hover .content-btn,
 .container .card3:hover .content-btn,
-.container .card4:hover .content-btn{
-    opacity:1;
+.container .card4:hover .content-btn {
+    opacity: 1;
     transform: translateY(0px);
     transition-delay: 0.75s;
 }
-.see{
-    background-color:#fff;
-    color:#000;
-    font-weight:600;
+
+.see {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
 }
 
+
 /* 404page */
-#blankpage{
-    position:relative;
+
+#blankpage {
+    position: relative;
     padding-top: 3%;
 }
-.titleblank{
+
+.titleblank {
     position: relative;
     font-weight: bolder;
 }
@@ -270,26 +298,29 @@ body{
     background-color: #FFADED;
 }
 
-.footer span{
+.footer span {
     color: #83FFE1;
 }
 
+
 /*browse myproject*/
-#myproject .container{
+
+#myproject .container {
     padding-top: 5%;
 }
-.dashstrip{
+
+.dashstrip {
     border: 2px solid #83FFE1;
     border-radius: 20px;
     width: 70px;
     height: -10px;
     bottom: 24px;
-    left:180px;
-    position:relative;
+    left: 180px;
+    position: relative;
     background-color: #83FFE1;
 }
 
-.card-deck{
+.card-deck {
     padding-bottom: 5%;
 }
 
@@ -303,74 +334,80 @@ body{
     font-weight: bolder;
 }
 
-.categories{
+.categories {
     border-radius: 10px;
-    background-color:#83FFE1;
+    background-color: #83FFE1;
     display: inline-block;
     position: relative;
 }
-.categories span{
-    color:#7045FF;
+
+.categories span {
+    color: #7045FF;
 }
 
-.read{
+.read {
     border-radius: 30px;
-    background-color:#fff;
-    color:#7045FF;
+    background-color: #fff;
+    color: #7045FF;
     position: relative;
     top: -20px;
 }
 
-
-.titles{
+.titles {
     position: relative;
     font-weight: bolder;
-    color:#7045FF;
+    color: #7045FF;
 }
 
-.card{
-    background-color:hsl(249, 26%, 24%);
-    border-radius:10px;
+.card {
+    background-color: hsl(249, 26%, 24%);
+    border-radius: 10px;
 }
 
 .card-img-top {
-    border-radius: 10px;
+    border-radius: 15px;
+    padding: 5px;
     max-width: 100%;
 }
-.card-title{
-    color:#83FFE1;
+
+.card-title {
+    color: #83FFE1;
 }
+
 .card-text {
     padding-top: 5%;
 }
-    
+
 
 /*about me*/
-#aboutme{
-    position:relative;
+
+#aboutme {
+    position: relative;
     padding: 0;
 }
 
 .about {
-    color:#83FFE1;
+    color: #83FFE1;
     font-weight: bolder;
 }
 
-.halo{
+.halo {
     font-weight: bolder;
-    color:#FFADED;
+    color: #FFADED;
 }
-.aboutme{
+
+.aboutme {
     padding-left: 20%;
-    padding-right:20%;
-}
-.aboutme p{
-    color:#fff;
-    text-align:justify;
+    padding-right: 20%;
 }
 
-.aboutme p span{
-    color:#83FFE1;
+.aboutme p {
+    color: #fff;
+    text-align: justify;
+}
+
+.aboutme p span {
+    color: #83FFE1;
     font-weight: bolder;
 }
 
@@ -402,7 +439,7 @@ body{
 .caption-header p {
     font-size: 17px;
     margin-bottom: -3px;
-    color:#000!important;
+    color: #000!important;
 }
 
 .caption-header span {
@@ -432,7 +469,7 @@ body{
     font-weight: 500;
     margin: 0;
     font-size: 15px;
-    color:#000;
+    color: #000;
 }
 
 .like-item span {
@@ -477,27 +514,31 @@ body{
     bottom: 40px;
 }
 
+
 /*social*/
-.iconn{
+
+.iconn {
     display: inline-block;
     font-size: 44px;
-    animation: float 5s ease-in-out
-    infinite;
+    animation: float 5s ease-in-out infinite;
 }
-.ri-github-circle-line{
+
+.ri-github-circle-line {
     animation-delay: 1s;
 }
-.ri-whatsapp-line{
+
+.ri-whatsapp-line {
     animation-delay: 2s;
 }
-@keyframes float{
-    0%{
-        transform:translateY(0);
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
     }
-    50%{
-        transform:translateY(-15px);
+    50% {
+        transform: translateY(-15px);
     }
-    100%{
-        transform:translateY(0);
+    100% {
+        transform: translateY(0);
     }
 }
